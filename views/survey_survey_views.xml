@@ -1,24 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <record id="view_survey_kanban_results_button" model="ir.ui.view">
         <field name="name">survey.survey.kanban.results.button</field>
         <field name="model">survey.survey</field>
-        <field name="inherit_id" ref="survey.view_survey_kanban"/>
+        <field name="inherit_id" ref="survey.survey_survey_view_kanban"/>
         <field name="arch" type="xml">
             <xpath expr="//div[@class='o_kanban_record_body']" position="inside">
-                <button type="object" name="export_survey_results" class="btn btn-primary"
-                        string="Resultados" icon="fa-download"/>
-            </xpath>
-        </field>
-    </record>
-
-    <record id="view_survey_form_results_button" model="ir.ui.view">
-        <field name="name">survey.survey.form.results.button</field>
-        <field name="model">survey.survey</field>
-        <field name="inherit_id" ref="survey.view_survey_form"/>
-        <field name="arch" type="xml">
-            <xpath expr="//header" position="inside">
-                <button type="object" name="export_survey_results" class="btn btn-primary"
-                        string="Resultados" icon="fa-download"/>
+                <button type="object" name="export_survey_results" 
+                        class="btn btn-primary" 
+                        string="Resultados" 
+                        icon="fa-download"/>
             </xpath>
         </field>
     </record>
